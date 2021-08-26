@@ -28,5 +28,5 @@ module "radditconfig" {
   source  = "app.terraform.io/vpdemo/radditconfig/azurerm"
   version = "1.0.0"
 
-  h_name = module.radditvm.public_ip
+  hname = module.radditvm.public_ip
 }
