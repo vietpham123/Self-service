@@ -21,6 +21,7 @@ module "radditvm" {
   version = "0.9.0"
 
   sb_id = module.radditnetwork.subnet_name
+  vpnsg = module.radditnetwork.nsg
 }
 
 module "radditconfig" {
