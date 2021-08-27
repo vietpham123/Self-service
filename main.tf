@@ -38,4 +38,6 @@ module "radditconfig" {
   vpc_hostname = module.radditvm.public_ip
   user_name = var.user_name
   user_password = var.user_password
+  
+  depends_on = [module.radditconfig]
 }
