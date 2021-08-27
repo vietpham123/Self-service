@@ -26,7 +26,7 @@ module "radditvm" {
   vpc_subnet = module.radditnetwork.subnet_name
   vpc_nsg = module.radditnetwork.nsg
   user_name = var.user_name
-  user_password = var.userpassword
+  user_password = var.user_password
   hashirg = var.hashirg
   hashiregion = var.hashiregion
 }
