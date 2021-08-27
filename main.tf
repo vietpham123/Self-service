@@ -20,13 +20,13 @@ module "radditvm" {
   source  = "app.terraform.io/vpdemo/radditvm/azurerm"
   version = "0.9.0"
 
-  sb_id = module.radditnetwork.subnet_name
-  vpnsg = module.radditnetwork.nsg
+  vpc_subnet = module.radditnetwork.subnet_name
+  vpc_nsg = module.radditnetwork.nsg
 }
 
 module "radditconfig" {
   source  = "app.terraform.io/vpdemo/radditconfig/azurerm"
   version = "1.0.0"
 
-  hname = module.radditvm.public_ip
+  vpc_hostname = module.radditvm.public_ip
 }
