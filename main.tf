@@ -21,7 +21,7 @@ module "radditnetwork" {
 
 module "radditvm" {
   source  = "app.terraform.io/vpdemo/radditvm/azurerm"
-  version = "0.9.7"
+  version = "0.9.8"
 
   vpc_subnet = module.radditnetwork.subnet_name
   vpc_nsg = module.radditnetwork.nsg
